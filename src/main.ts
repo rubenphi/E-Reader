@@ -28,5 +28,6 @@ const app = createApp(App)
   .use(router);
   
 router.isReady().then(() => {
+  document.title = "E - Reader";
   app.mount('#app');
 });

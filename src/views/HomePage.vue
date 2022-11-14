@@ -2,7 +2,7 @@
   <ion-page>
     <ion-header :translucent="true">
       <ion-toolbar>
-        <ion-title>Inbox</ion-title>
+        <ion-title>Tu Biblioteca</ion-title>
       </ion-toolbar>
     </ion-header>
     
@@ -13,7 +13,7 @@
       
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Inbox</ion-title>
+          <ion-title size="large">Tu Biblioteca</ion-title>
         </ion-toolbar>
       </ion-header>
       
@@ -35,6 +35,7 @@ export default defineComponent({
   data() {
     return {
       messages: getMessages()
+      
     }
   },
   methods: {
