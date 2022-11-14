@@ -16,8 +16,8 @@ const messages: Message[] = [
     subject: 'Juan Camilo Yate',
     id: 0,
     audio: undefined,
-    portada: undefined,
-    content: '<p><strong>Distorsi&oacute;n</strong>&nbsp;</p>' + 
+    portada: getImage(0),
+    content: 
     '<p>Hace d&iacute;as que no recuerdo lo que sucedi&oacute;, pues mi vida no es la misma despu&eacute;s de lo ocurrido, no me puedo mirar ni en un espejo, miro mi reflejo y no s&eacute; qui&eacute;n es el que est&aacute; ah&iacute;, no me reconozco, un hombre mal oliente despeinado, en si un bastardo completo. Hace diez d&iacute;as que no salgo a la calle pues me da miedo ser reconocido.&nbsp;</p>' + 
     '<p>La verdadera pregunta aqu&iacute; es c&oacute;mo llegue a donde estoy, pues todo en 2000 pues fue el a&ntilde;o en el que ocurri&oacute; todo.&nbsp; <br /></p>' + 
     '<p><strong>D&iacute;a 1</strong>&nbsp;</p>' + 
