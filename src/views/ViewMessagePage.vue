@@ -52,7 +52,7 @@
                   >
                
 
-                  <ion-card>
+                  <ion-card v-if="imagen">
     <img alt="Silhouette of mountains" :src=imagen />
   </ion-card>
 
@@ -103,7 +103,7 @@ export default defineComponent({
     const route = useRoute();
     const message = getMessage(parseInt(route.params.id as string, 10));
     const audio = ref(new Audio("data:audio/" + message?.audio?.format + ";base64," + message?.audio?.content));
-    const imagen = ref<string>("data:image/" + message?.portada?.format+ ";base64," + message?.portada?.content);
+    const imagen = message!.portada ? ref<string>("data:image/" + message?.portada?.format+ ";base64," + message?.portada?.content): null ;
     const isPlaying = ref(false);
     const audioDuration = ref(100);
     const playbackTime = ref(0);
